@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <nav class="navbar col-12  position-fixed bg-dark navbar-expand-lg" data-bs-theme="dark" style="z-index:999">
+      <div class="container-fluid col-10">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://www.saopaulofc.net/noticias/noticias/ingressos">ingressos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#produtos">sobre o jogo</a></li>
+                <li><a class="dropdown-item" href="#conteudos">conteudos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#footer">direitos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">em breve</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/xfla.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/lucasmoura.avif" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/james.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <h2 id="produtos" class="text-center">Um pouco mais sobre o jogo</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4 col-11 m-auto">
+      <div class="col">
+        <div class="card">
+          <img src="img/morumbi.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Morumbi</h5>
+            <p class="card-text">O Estádio do Morumbi é um icônico estádio de futebol localizado na cidade de São Paulo, Brasil. Inaugurado em 1960, é a casa do São Paulo Futebol Clube. Com capacidade para mais de 60.000 espectadores, é um dos maiores estádios do Brasil. O Morumbi é conhecido por sua arquitetura imponente, atmosfera vibrante em dias de jogo e por ter sido palco de diversos eventos esportivos e musicais de destaque ao longo de sua história.</p>
+               <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  veja mais
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">sobre</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Saiba mais sobre o jogo <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj36La74qOBAxX0LbkGHQtCAb4QFnoECEwQAQ&url=https%3A%2F%2Fpt.wikipedia.org%2Fwiki%2FCuphead&usg=AOvVaw0Es1qdQ9-gRMUJJ-ZNo8SS&opi=89978449">aqui</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img/maracana.jpg" class="card-img-top" alt="..." >
+          <div class="card-body">
+            <h5 class="card-title">Maracanã</h5>
+            <p class="card-text">O Estádio do Maracanã, localizado no Rio de Janeiro, é um dos estádios mais famosos e icônicos do mundo. Inaugurado em 1950, foi palco da Copa do Mundo daquele ano. Com capacidade para mais de 78.000 espectadores, é conhecido por sua arquitetura distintiva, com arcos que se estendem sobre o estádio. O Maracanã também é um centro cultural importante, recebendo não apenas eventos esportivos, mas também shows e outras atividades culturais. É considerado um símbolo do futebol brasileiro e da paixão esportiva do país.<br>
+              </p>
+          
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Veja mais
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Assista esse e mais filmes <a href="https://www.google.com/aclk?sa=l&ai=DChcSEwjakZD31KOBAxWOHq0GHV4cBLYYABACGgJwdg&gclid=Cj0KCQjw9fqnBhDSARIsAHlcQYRsf7pEGfGAgCzljaueOH9AjtTRZc8jVpwrpa8JFxkbEv7qbzLLtasaAl9PEALw_wcB&sig=AOD64_3RW6rB16p5denpW432KArZcsA9GA&q&adurl&ved=2ahUKEwiWqoP31KOBAxVXBbkGHUSsABwQ0Qx6BAgKEAE">aqui</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <br><br>
+    <hr class="col-11 m-auto">
+    <div id="conteudos" class="col-11 m-auto">
+      <h2 class="text-center">Copa do Brasil</h2>
+      <p style="font-size: 110%;">
+        A Copa do Brasil é uma competição de futebol anual realizada no Brasil, que reúne clubes de diferentes estados em uma disputa eliminatória. Ela é conhecida por proporcionar emocionantes confrontos e oportunidades para clubes de todos os tamanhos brilharem, culminando na premiação do vencedor com a cobiçada taça. É uma parte fundamental do cenário esportivo brasileiro, oferecendo aos times a chance de conquistar um título nacional e uma vaga na Copa Libertadores.
+      </p>
+    </div>
+
+    <footer id="footer" class="page-footer p-5 col-11 m-auto" 
+            style="background-color:#333;">
+      <div class="text-center">
+        <a href="#">@2023 copyright: Peagaa22</a>
+      </div>
+    </footer>
+            
+    
+
+  </body>
+</html>
